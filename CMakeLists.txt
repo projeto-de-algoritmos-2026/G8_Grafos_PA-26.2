@@ -12,7 +12,7 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(raylib)
 
-add_executable(CavaloRaylib main.cpp)
+add_executable(CavaloRaylib src/main.cpp)
 target_link_libraries(CavaloRaylib PRIVATE raylib)
 
 if (UNIX AND NOT APPLE)
