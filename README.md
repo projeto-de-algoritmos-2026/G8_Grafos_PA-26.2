@@ -17,7 +17,7 @@ O programa simula o movimento de um Cavalo de xadrez (que se move em "L") em um 
 ## --- Algoritmos Utilizados ---
 
 *   **Algoritmo de Dijkstra:** Calcula a rota garantindo o menor custo total, explorando os nós de forma uniforme a partir do ponto de origem.
-*   **Algoritmo A* (Planejado):** Otimiza a busca do Dijkstra utilizando uma heurística (distância euclidiana ou Manhattan) para "guiar" a busca na direção do destino, processando menos vértices.
+*   **Algoritmo A*:** Otimiza a busca utilizando a heurística da distância euclidiana para "guiar" a busca diretamente na direção do destino, processando menos vértices de forma inteligente.
 
 ## --- Tecnologias e Dependências ---
 
@@ -44,28 +44,36 @@ make
 
 # 4. Execute o programa
 ./CavaloRaylib
-
 ```
 
 ## --- Controles da Interface ---
 
 * **Botão Esquerdo do Mouse:**
-* 1º Clique: Define a casa de **Início** (Verde).
-* 2º Clique: Define a casa de **Destino** (Vermelho) e executa o algoritmo.
+* 1º Clique: Define a casa de **Início** (com a peça do Cavalo).
+* 2º Clique: Define a casa de **Destino** (Vermelho), dispara o algoritmo A* e inicia a animação do trajeto.
 
 
+* **Botão do Meio do Mouse:** Adiciona ou remove **Obstáculos** (bloqueios com peças pretas) dinamicamente no tabuleiro.
 * **Botão Direito do Mouse:** Limpa o tabuleiro para realizar uma nova busca.
 
 ## --- Estrutura do Projeto ---
 
 ```text
+├── assets/               # Planilhas de sprites (Pixel Art)
 ├── src/
-│   └── main.cpp          # Código principal, interface Raylib e motor lógico
+│   ├── grafo.h           # Estruturas do grafo, heurística e motor do A*
+│   └── main.cpp          # Código principal, animação, loop e interface Raylib
 ├── CMakeLists.txt        # Configuração do CMake e dependências
 └── README.md             # Documentação
 
 ```
+
+## --- Créditos de Assets ---
+
+* As peças de xadrez em pixel art utilizadas na interface gráfica foram criadas por **Dani Maccari** e estão disponíveis no itch.io: [Pixel Chess por Dani Maccari](https://dani-maccari.itch.io/pixel-chess).
+
 ---
+
 ## Vídeo de apresentação
 
 ---
