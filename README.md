@@ -17,7 +17,7 @@ O programa simula o movimento de um Cavalo de xadrez (que se move em "L") em um 
 ## --- Algoritmos Utilizados ---
 
 *   **Algoritmo de Dijkstra:** Calcula a rota garantindo o menor custo total, explorando os nós de forma uniforme a partir do ponto de origem.
-*   **Algoritmo A*:** Otimiza a busca utilizando a heurística da distância euclidiana para "guiar" a busca diretamente na direção do destino, processando menos vértices de forma inteligente.
+*   **Algoritmo A\*:** Otimiza a busca utilizando a heurística da distância euclidiana para "guiar" a busca diretamente na direção do destino, processando menos vértices de forma inteligente.
 
 ## --- Tecnologias e Dependências ---
 
