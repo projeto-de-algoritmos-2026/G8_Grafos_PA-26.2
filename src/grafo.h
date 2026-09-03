@@ -35,7 +35,6 @@ struct NoAStar {
     }
 };
 
-// Mantemos o nome da função como encontrarCaminhoCavalo para não precisar mudar nada no main.cpp
 inline std::vector<Posicao> encontrarCaminhoCavalo(Posicao inicio, Posicao destino, const std::vector<Posicao>& obstaculos) {
     int dx[] = {1, 1, -1, -1, 2, 2, -2, -2};
     int dy[] = {2, -2, 2, -2, 1, -1, 1, -1};
